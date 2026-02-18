@@ -5,6 +5,14 @@
     align-items: center;
 }
 
+.links {
+    width: 30%;
+    background-image: url("/img/pexels-diva-28319371.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px var(--primarycolor);
+}
 
 .links ul {
     display: flex;
@@ -58,6 +66,8 @@ textarea:focus {
 .submit-btn {
     background-color: var(--primarycolor);
     color: var(--secondarycolor);
+    font-size: larger;
+    font-weight: bold;
     padding: 1rem;
     width: 100%;
     border-radius: 5px;

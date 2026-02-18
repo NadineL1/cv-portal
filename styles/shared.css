@@ -4,16 +4,19 @@
 :root {
     --headerfont: "Oswald", serif;
     --primaryfont: "Source serif", serif;
-    --primarycolor: rgb(205, 185, 231);
+    --primarycolor: rgb(195, 166, 233);
     --secondarycolor: rgb(73, 56, 56);
-    --highlight: ;
-    --shadow: ;
+    --highlight: rgb(229, 216, 247);
+    ;
+    --shadow: rgb(53, 41, 41);
+    ;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: var(--primaryfont);
 }
 
 nav {
