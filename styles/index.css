@@ -1,0 +1,36 @@
+body {
+    background: linear-gradient(90deg, rgb(247, 245, 245), rgb(132, 128, 156));
+}
+
+.hero {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+
+.hero-img {
+    width: 400px;
+    box-shadow: 5px 5px 10px var(--primarycolor);
+    border-radius: 10px;
+}
+
+.hero-content {
+    padding: 10rem;
+    font-family: var(--headerfont);
+    color: var(--primarycolor);
+}
+
+.hero-content p {
+    margin-bottom: 2rem;
+    color: var(--secondarycolor);
+}
+
+.hero-content a {
+    text-decoration: none;
+    color: var(--primarycolor);
+    padding: 0.8rem;
+    background-color: var(--secondarycolor);
+    border-radius: 5px;
+}
