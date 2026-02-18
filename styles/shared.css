@@ -45,3 +45,22 @@ nav li {
     font-size: large;
     font-weight: bold;
 }
+
+footer {
+    width: 100%;
+    padding: 1.5rem;
+    position: fixed;
+    bottom: 0;
+    background-color: var(--primarycolor);
+    color: var(--secondarycolor);
+
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-links img {
+    width: 70%;
+}
