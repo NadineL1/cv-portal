@@ -10,6 +10,11 @@ body {
     width: 80%;
 }
 
+h1 {
+    color: var(--secondarycolor);
+    text-shadow: 1px 1px 10px var(--primarycolor);
+}
+
 .hero-img {
     width: 400px;
     box-shadow: 5px 5px 10px var(--primarycolor);
