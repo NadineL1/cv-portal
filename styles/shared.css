@@ -7,9 +7,7 @@
     --primarycolor: rgb(195, 166, 233);
     --secondarycolor: rgb(73, 56, 56);
     --highlight: rgb(229, 216, 247);
-    ;
     --shadow: rgb(53, 41, 41);
-    ;
 }
 
 * {
@@ -27,10 +25,10 @@ nav {
     height: 5rem;
 }
 
-nav a {
-    color: var(--secondarycolor);
-    text-decoration: none;
-    margin: 1.5rem;
+.logo {
+    font-family: var(--headerfont);
+    font-size: large;
+    font-weight: bold;
 }
 
 nav ul {
@@ -43,11 +41,25 @@ nav li {
     font-size: 0.9rem;
 }
 
-.logo {
-    font-family: var(--headerfont);
-    font-size: large;
-    font-weight: bold;
+nav a {
+    color: var(--secondarycolor);
+    text-decoration: none;
+    margin: 1.5rem;
 }
+
+/*hover effect if a is not active page*/
+nav a:hover:not(.active) {
+    color: white;
+}
+
+/*marking the active page*/
+.active {
+    background-color: var(--secondarycolor);
+    color: var(--primarycolor);
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
 
 footer {
     width: 100%;
