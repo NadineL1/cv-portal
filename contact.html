@@ -23,12 +23,32 @@
     </header>
     <main>
         <section class="content-container">
-            <div class="forms">Forms go here :)
-                When submit button clicked mailto
-                first name last name
-                email
-                message
+            <div class="contact-form">
+                <h1>Send me an email</h1>
+
+                <form method="POST" action="mailto:nadine.lindell@outlook.com" enctype="text/plain">
+                    <div class="control">
+                        <label for="name">Name</label>
+                        <input id="name" name="name" type="text" placeholder="Your name.." required />
+                    </div>
+                    <br>
+                    <div class="control">
+                        <label for="name">Email</label>
+                        <input id="email" name="email" type="email" placeholder="Your email.." required />
+                    </div>
+                    <br>
+                    <div class="control">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="body" rows="7" placeholder="How can I help you?" required>
+                </textarea>
+                    </div>
+                    <br>
+                    <div class="control">
+                        <button type="submit" class="submit-btn">Send email</button>
+                    </div>
+                </form>
             </div>
+
             <div class="links">
                 <ul>
                     <li>

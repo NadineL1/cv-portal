@@ -18,3 +18,49 @@
 .content-container img {
     padding: 2rem;
 }
+
+.contact-form h1 {
+    margin-bottom: 1rem;
+    color: var(--secondarycolor);
+    text-shadow: 5px 5px 20px var(--primarycolor);
+}
+
+.contact-form {
+    width: 30%;
+    padding: 3rem;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px var(--primarycolor);
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: var(--primarycolor);
+}
+
+.contact-form label {
+    display: block;
+    font-weight: medium;
+    margin-bottom: 0.5rem;
+    color: var(--primarycolor);
+    text-shadow: 1px 1px 50px var(--secondarycolor);
+}
+
+.submit-btn {
+    background-color: var(--primarycolor);
+    color: var(--secondarycolor);
+    padding: 1rem;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 1px 1px 10px var(--primarycolor);
+}
