@@ -1,27 +1,14 @@
-body {
-    background: linear-gradient(90deg, rgb(255, 255, 255), rgb(195, 188, 241));
-}
-
 .hero {
-    margin-top: 2rem;
+    margin-top: 4rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 80%;
-}
-
-h1 {
-    color: var(--secondarycolor);
-    text-shadow: 1px 1px 10px var(--primarycolor);
-}
-
-.hero-img {
-    width: 400px;
-    box-shadow: 5px 5px 10px var(--primarycolor);
-    border-radius: 10px;
+    width: 100%;
 }
 
 .hero-content {
+    width: 40%;
+    font-size: larger;
     padding: 10rem;
     font-family: var(--headerfont);
     color: var(--primarycolor);
@@ -34,8 +21,39 @@ h1 {
 
 .hero-content a {
     text-decoration: none;
-    color: var(--primarycolor);
+    color: white;
     padding: 0.8rem;
     background-color: var(--secondarycolor);
-    border-radius: 5px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px var(--primarycolor);
+    transition: padding 0.3s ease, background-color 1s ease;
+}
+
+.hero-content a:hover {
+    padding: 1.5rem;
+    background-color: var(--primarycolor);
+}
+
+h1 {
+    color: var(--secondarycolor);
+    text-shadow: 1px 1px 10px var(--primarycolor);
+    margin-bottom: 0.3rem;
+}
+
+h2 {
+    margin-bottom: 0.5rem;
+}
+
+.heroimg-container {
+    width: 40%;
+    height: 45vh;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-img {
+    height: 100%;
+    object-fit: fill;
+    box-shadow: 10px 10px 10px var(--primarycolor);
+    border-radius: 10px;
 }
