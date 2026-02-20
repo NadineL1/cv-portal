@@ -65,11 +65,10 @@ nav a:hover:not(.active) {
 footer {
     width: 100%;
     padding: 1.5rem;
-    position: fixed;
+    /*footer always at the bottom*/
     bottom: 0;
     background-color: var(--primarycolor);
     color: var(--secondarycolor);
-
 }
 
 .footer-links {
@@ -85,3 +84,13 @@ footer {
 
     /*768px*/
 ) {}
+
+
+
+/*Accessibility*/
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation: none !important;
+        transition: none !important;
+    }
+}

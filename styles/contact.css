@@ -16,15 +16,12 @@
 
 .links ul {
     display: flex;
+    justify-content: space-evenly;
 }
 
 .links li {
     list-style: none;
     margin: 2rem;
-}
-
-.content-container img {
-    padding: 2rem;
 }
 
 .contact-form h1 {
