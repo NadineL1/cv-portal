@@ -45,6 +45,7 @@ nav a {
     color: var(--secondarycolor);
     text-decoration: none;
     margin: 1.5rem;
+    transition: color 0.5s ease-in;
 }
 
 /*hover effect if a is not active page*/
@@ -55,7 +56,7 @@ nav a:hover:not(.active) {
 /*marking the active page*/
 .active {
     background-color: var(--secondarycolor);
-    color: var(--primarycolor);
+    color: white;
     padding: 0.5rem;
     border-radius: 5px;
 }
@@ -79,3 +80,8 @@ footer {
 .footer-links img {
     width: 70%;
 }
+
+@media(max-width:48rem
+
+    /*768px*/
+) {}
