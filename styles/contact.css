@@ -1,34 +1,66 @@
 .content-container {
-    height: 50rem;
+    max-width: 1400px;
+    margin: 5rem auto;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    gap: 10rem;
     align-items: center;
+    padding: 0 1%;
 }
 
 .links {
-    width: 30%;
+    flex: 1;
+    max-width: 650px;
 }
 
 .links ul {
     list-style: none;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    padding: 0;
+    margin: 0;
 }
 
 .links li {
-    margin: 2rem;
     width: 300px;
+    min-height: 220px;
     padding: 2rem;
-    background-image: url("/img/pexels-diva-28319371.jpg");
-    background-size: cover;
     border-radius: 10px;
-    border: 10px var(--primarycolor);
     box-shadow: 5px 5px 10px var(--primarycolor);
 }
 
+.grid-item h2 {
+    color: var(--primarycolor);
+    border-bottom: 0.1rem solid var(--primarycolor);
+
+}
+
+.links p {
+    padding-top: 1rem;
+    color: var(--secondarycolor);
+}
+
 .links a {
-    text-decoration: none;
-    color: black;
+    text-decoration: underline transparent;
+    color: var(--secondarycolor);
+    transform: text-decoration 0.5s ease;
+}
+
+.links a:hover {
+    text-decoration-color: var(--primarycolor);
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.image img {
+    height: 50px;
+    width: auto;
 }
 
 .contact-form h1 {
@@ -40,7 +72,8 @@
 }
 
 .contact-form {
-    width: 30%;
+    flex: 2;
+    max-width: 700px;
     padding: 3rem;
     border-radius: 10px;
     box-shadow: 1px 1px 10px var(--primarycolor);
@@ -71,12 +104,12 @@ textarea:focus {
 
 .submit-btn {
     background-color: var(--primarycolor);
-    color: var(--secondarycolor);
+    color: white;
     font-size: larger;
     font-weight: bold;
     padding: 1rem;
     width: 100%;
-    border-radius: 5px;
+    border-radius: 10px;
     border: none;
     box-shadow: 1px 1px 10px var(--primarycolor);
 }
