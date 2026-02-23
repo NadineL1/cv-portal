@@ -24,6 +24,7 @@ ul {
 
 .hobbies li {
     margin: 4rem;
+    transition: transform 0.4s ease;
 }
 
 .hobbies h2 {
@@ -40,10 +41,9 @@ ul {
     object-fit: cover;
     border-radius: 600px;
     box-shadow: 10px 10px 10px var(--primarycolor);
-    transition: width 0.3s ease-in, height 0.3s ease-in;
+
 }
 
-.hobby-image:hover {
-    width: 38rem;
-    height: 26rem;
+.hobbies li:hover {
+    transform: scale(1.1);
 }
