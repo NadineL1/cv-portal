@@ -27,7 +27,7 @@
     background-color: var(--secondarycolor);
     border-radius: 10px;
     box-shadow: 2px 2px 10px var(--primarycolor);
-    transition: transform 1s ease, background-color 1s ease;
+    transition: transform 0.4s ease, background-color 0.4s ease;
     margin-right: 1rem;
 }
 
