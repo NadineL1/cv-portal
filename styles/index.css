@@ -20,18 +20,20 @@
 }
 
 .hero-content a {
+    display: inline-block;
     text-decoration: none;
     color: white;
-    padding: 0.8rem;
+    padding: 1rem 2rem;
     background-color: var(--secondarycolor);
     border-radius: 10px;
     box-shadow: 2px 2px 10px var(--primarycolor);
-    transition: padding 0.3s ease, background-color 1s ease;
+    transition: transform 1s ease, background-color 1s ease;
+    margin-right: 1rem;
 }
 
 .hero-content a:hover {
-    padding: 1.5rem;
     background-color: var(--primarycolor);
+    transform: scale(1.05);
 }
 
 h1 {
