@@ -29,7 +29,6 @@ ul {
 
 .hobbies h2 {
     color: var(--primarycolor);
-    text-shadow: 1px 1px 1px var(--secondarycolor);
     font-size: 2rem;
     text-align: center;
     margin-top: 1rem;

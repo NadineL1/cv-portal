@@ -99,7 +99,6 @@ textarea:focus {
     font-weight: medium;
     margin-bottom: 0.5rem;
     color: var(--primarycolor);
-    text-shadow: 1px 1px 50px var(--secondarycolor);
 }
 
 .submit-btn {
