@@ -1,17 +1,22 @@
-.hero {
-    height: 85vh;
+.content-container {
+    max-width: 1400px;
+    margin: 5rem auto;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+    justify-content: space-around;
+    gap: 10rem;
+    align-items: start;
+    padding: 5% 1%;
 }
 
 .hero-content {
-    width: 40%;
+    flex: 1;
+    max-width: 650px;
     font-size: larger;
-    padding: 10rem;
     font-family: var(--headerfont);
     color: var(--primarycolor);
+    padding: 5rem;
+    box-shadow: 1px 1px 10px var(--primarycolor);
+    border-radius: 10px;
 }
 
 .hero-content p {
@@ -20,7 +25,6 @@
 }
 
 .hero-content a {
-    display: inline-block;
     text-decoration: none;
     color: white;
     padding: 1rem 2rem;
@@ -47,15 +51,16 @@ h2 {
 }
 
 .heroimg-container {
-    width: 40%;
-    height: 45vh;
+    flex: 1;
+    height: 400px;
+    width: auto;
     display: flex;
-    justify-content: center;
+    justify-content: right;
 }
 
 .hero-img {
-    height: 100%;
     object-fit: fill;
-    box-shadow: 10px 10px 10px var(--primarycolor);
+    border: 2px solid rgba(138, 43, 226, 0.4);
+    box-shadow: 5px 5px 10px var(--primarycolor);
     border-radius: 10px;
 }
