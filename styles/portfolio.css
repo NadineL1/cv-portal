@@ -1,0 +1,27 @@
+.content-container {
+    height: 100vh;
+    width: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.card {
+    width: 400px;
+    height: 400px;
+    margin: 2rem auto;
+    background-color: var(--primarycolor);
+    display: flex;
+    flex-direction: column;
+}
+
+.card img {
+    max-height: 300PX;
+    width: auto;
+    object-fit: cover;
+
+}
+
+.card a {
+    text-decoration: none;
+    color: var(--secondarycolor);
+}
