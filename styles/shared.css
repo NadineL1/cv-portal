@@ -10,6 +10,27 @@
     --shadow: rgb(53, 41, 41);
 }
 
+/*scrollbar styling + behaviour*/
+html {
+    overflow-y: scroll;
+    scrollbar-color: var(--secondarycolor) rgba(217, 160, 219, 0.2);
+    scrollbar-width: thin;
+}
+::-webkit-scrollbar {
+    width: 10px; 
+}
+::-webkit-scrollbar-track {
+    background: rgba(217, 160, 219, 0.1); 
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: var(--secondarycolor); 
+    border-radius: 10px;
+    border: 2px solid transparent;
+    background-clip: content-box;
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -38,13 +59,15 @@ nav ul {
 nav li {
     list-style: none;
     font-family: var(--primaryfont);
-    font-size: 0.9rem;
+    font-size: 1rem;
+    margin: 1rem;
 }
 
 nav a {
     color: var(--secondarycolor);
     text-decoration: none;
-    margin: 1.5rem;
+    border-radius: 10px;
+    padding: 0.5rem;
     transition: color 0.5s ease-in;
 }
 
@@ -56,9 +79,7 @@ nav a:hover:not(.active) {
 /*marking the active page*/
 .active {
     background-color: var(--secondarycolor);
-    color: white;
-    padding: 0.5rem;
-    border-radius: 5px;
+    color: white;   
 }
 
 
