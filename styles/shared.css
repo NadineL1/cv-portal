@@ -38,6 +38,17 @@ html {
     font-family: var(--primaryfont);
 }
 
+/*forcing the body to always fill screen and "pushing" down footer to bottom */
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin:0;
+}
+main{
+    flex:1;
+}
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -50,6 +61,7 @@ nav {
     font-family: var(--headerfont);
     font-size: large;
     font-weight: bold;
+    margin-left: 2rem;
 }
 
 nav ul {
@@ -86,8 +98,6 @@ nav a:hover:not(.active) {
 footer {
     width: 100%;
     padding: 1.5rem;
-    /*footer always at the bottom*/
-    bottom: 0;
     background-color: var(--primarycolor);
     color: var(--secondarycolor);
 }
