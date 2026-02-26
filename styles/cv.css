@@ -18,7 +18,6 @@ h4{
     font-size: 1rem;
 }
 
-
 .content-container{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -45,16 +44,37 @@ h4{
 }
 
 
+/*When screen is too small for grid w 2 columns*/
+@media (max-width:1100px)
+{
+    .content-container{
+        grid-template-columns:1fr;
+        margin-bottom: 1rem;
+    }
+    .content{
+        margin: 0.5rem auto;
+    }
+}
 
-
-
-
-
-
-
-
-
-
+/*When screen is phonesize*/
+@media (max-width:48rem)
+{
+    h1{
+        font-size: 2rem;
+    }
+    h2{
+        font-size: 1.7rem;
+    }
+    h3{
+        font-size: 1.5rem;
+    }
+    h4{
+        font-size: 1.2rem;
+    }
+    p{
+        font-size: 1rem;
+    }  
+}
 
 
 @media print{
