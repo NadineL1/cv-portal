@@ -1,0 +1,64 @@
+.page-title{
+    text-align: center;
+}
+h1{
+    font-size: 3rem;
+    margin: 2rem auto 0.3rem auto;
+    color: var(--secondarycolor);
+}
+h2{
+    font-size: 2rem;
+    color: var(--primarycolor);
+}
+h3{
+    font-size: 1.5rem;
+    
+}
+h4{
+    font-size: 1rem;
+}
+
+
+.content-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+.content{
+    width:30rem;
+    margin: 2rem auto;
+}
+
+.content ul{
+    list-style-type: "- ";
+    padding-left: 10px;
+   
+}
+
+.content p, h3, h4{
+    color: var(--secondarycolor);
+    margin-bottom: 0.3rem;
+}
+
+.content-part{
+    margin-bottom: 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media print{
+    header, footer, nav{
+        display: none !important;
+    }
+}
