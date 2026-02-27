@@ -10,6 +10,7 @@
 
 .hero-content {
     flex: 1;
+    min-width: 350px;
     max-width: 650px;
     font-size: larger;
     font-family: var(--headerfont);
@@ -52,7 +53,7 @@ h2 {
 
 .heroimg-container {
     flex: 1;
-    height: 400px;
+    height: 380px;
     width: auto;
     display: flex;
     justify-content: right;
@@ -60,7 +61,31 @@ h2 {
 
 .hero-img {
     object-fit: fill;
+    max-height: 380px;
     border: 2px solid rgba(138, 43, 226, 0.4);
     box-shadow: 5px 5px 10px var(--primarycolor);
     border-radius: 10px;
+}
+@media(max-width: 1300px)
+{
+
+    .content-container{
+        gap: 5rem;
+ 
+    }
+    .hero-content{
+        padding:2rem;
+    }
+}
+
+/*mobile view*/
+@media(max-width:48rem)
+{
+    .hero-content{
+        max-width: 450px;
+    }
+    .content-container{
+        flex-direction: column;
+        align-items: center;
+    }
 }
