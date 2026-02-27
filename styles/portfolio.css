@@ -45,10 +45,19 @@ h2{
     margin-bottom: 1rem;
 }
 
+.buttons{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: auto;
+}
 
 .card a {
     text-decoration: none;
     color: white;
+    width: 45%;
+    font-size: 0.8rem;
     padding: 1rem;
     margin-top: auto;
     text-align: center;
@@ -61,4 +70,43 @@ h2{
 .card a:hover {
     background-color: var(--primarycolor);
     transform: scale(1.05);
+}
+
+
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(7, 7, 7, 0.6);
+
+    visibility: hidden;
+    opacity: 0;
+}
+
+.modal:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal-content {
+    background-color: rgb(216, 182, 218);
+    width: 500px;
+    max-width: 80%;
+    padding: 2em;
+    border-radius: 8px;
+    position: relative;
+}
+.modal-content p{
+    color: var(--secondarycolor);
+}
+.modal-close {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    text-decoration: none;
 }
