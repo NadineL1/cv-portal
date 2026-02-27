@@ -1,29 +1,26 @@
-body {
-    min-height: 100vh;
-}
-
 .hobbies {
     display: flex;
     justify-content: center;
+    margin: 2rem auto;
 }
 
 h1 {
+    font-size: 3rem;
     color: var(--primarycolor);
     text-shadow: 1px 1px 1px var(--secondarycolor);
     text-align: center;
     margin-top: 2rem;
     margin-bottom: 0.5rem;
-    font-size: 3rem;
 }
 
 ul {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     list-style: none;
 }
 
 .hobbies li {
-    margin: 4rem;
+    margin: 2rem;
     transition: transform 0.4s ease;
 }
 
@@ -35,14 +32,34 @@ ul {
 }
 
 .hobby-image {
-    width: 37rem;
-    height: 25rem;
+    width: 35rem;
+    height: 22rem;
     object-fit: cover;
-    border-radius: 600px;
+    border-radius: 10px;
     box-shadow: 10px 10px 10px var(--primarycolor);
 
 }
 
 .hobbies li:hover {
     transform: scale(1.1);
+}
+
+
+@media(max-width:1600px)
+{
+    .hobby-image{
+        width: 30rem;
+        height: 17rem;
+    }
+    ul{
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+@media(max-width:48rem)
+{
+    ul{
+        grid-template-columns: 1fr;
+    }
 }
