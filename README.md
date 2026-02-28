@@ -1,1 +1,4 @@
-Cv-portal/Portfolio assignment in my FrontEnd course.
+https://nadinel1.github.io/cv-portal/
+Cv-portal/Portfolio
+
+
